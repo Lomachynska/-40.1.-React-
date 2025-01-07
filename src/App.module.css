@@ -1,11 +1,11 @@
-/* App.css */
-h1 {
+/* App.module.css */
+.title {
     color: #4CAF50;
     text-align: center;
     margin-top: 20px;
   }
   
-  h2 {
+  .subtitle {
     color: #333;
     font-size: 1.2em;
     text-align: center;

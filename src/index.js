@@ -1,13 +1,13 @@
+// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';  // Імпорт компонента App
+import ReactDOM from 'react-dom';
+import './index.css';  // (Якщо є глобальні стилі, якщо ні — можна видалити цей рядок)
+import App from './App';  // Імпортуємо основний компонент App
 
-// Створюємо корінь рендеру
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// Рендеримо компонент App всередину елемента з id='root'
-root.render(
+// Рендеримо компонент App в елемент з id='root' в index.html
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root') // цей елемент має бути в public/index.html
 );

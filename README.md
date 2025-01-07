@@ -62,3 +62,21 @@ rm package-lock.json
 npm install
 
 
+index.js: Це точка входу  React додатку. 
+У цьому файлі ініціюємо рендеринг  компонента App у DOM елемент з id "root".
+
+public/index.html: Це HTML-шаблон, у якому корінь для рендерингу React додатка.
+Цей процес має допомогти вам запустити проект без помилок.
+
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+npm start
+
+
+видалити
+rm -rf node_modules package-lock.json
+
+npm install
+
+npm start
+
+npm install react-scripts --save-dev

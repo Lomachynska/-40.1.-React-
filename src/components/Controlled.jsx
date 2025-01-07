@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
 
-const ControlledForm = () => {
+function ControlledForm() {
   const [inputValue, setInputValue] = useState('');
 
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
+  const handleChange = (e) => {
+    setInputValue(e.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert(`Форма надіслана з значенням: ${inputValue}`);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Ви ввели: ${inputValue}`);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Текстове поле:
+    <div>
+      <h2>Контрольована форма</h2>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
-          value={inputValue} // Контролюємо значення через state
+          value={inputValue}
           onChange={handleChange}
         />
-      </label>
-      <button type="submit">Надіслати</button>
-    </form>
+        <button type="submit">Відправити</button>
+      </form>
+    </div>
   );
-};
+}
 
 export default ControlledForm;

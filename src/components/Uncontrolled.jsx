@@ -1,22 +1,22 @@
 import React, { useRef } from 'react';
 
-const UncontrolledForm = () => {
+function UncontrolledForm() {
   const inputRef = useRef();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert(`Форма надіслана з значенням: ${inputRef.current.value}`);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Ви ввели: ${inputRef.current.value}`);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Текстове поле:
-        <input type="text" ref={inputRef} /> {/* Використовуємо ref замість state */}
-      </label>
-      <button type="submit">Надіслати</button>
-    </form>
+    <div>
+      <h2>Неконтрольована форма</h2>
+      <form onSubmit={handleSubmit}>
+        <input ref={inputRef} type="text" />
+        <button type="submit">Відправити</button>
+      </form>
+    </div>
   );
-};
+}
 
 export default UncontrolledForm;
