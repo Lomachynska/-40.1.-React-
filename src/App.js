@@ -1,7 +1,8 @@
 import React from 'react';
-import ControlledForm from './components/Controlled.jsx';  // змінили на .jsx
-import UncontrolledForm from './components/Uncontrolled.jsx';  // змінили на .jsx
-import FetchData from './components/FetchData.js';  // не змінили, бо це вже .js
+import ControlledForm from './components/Controlled.jsx';  //  .jsx
+import UncontrolledForm from './components/Uncontrolled.jsx';  //  .jsx
+import FetchData from './components/FetchData.js';  // .js
+import useEffect from './components/useEffect.jsx'; // .jsx
 
 function App() {
   return (
