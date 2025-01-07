@@ -10,7 +10,7 @@ function App() {
       
       <ControlledForm />
       <hr />
-      <UncontrolledForm />
+      <UncontrolledForm NAME={'AWD'} />
       <hr />
       <FetchData />
     </div>

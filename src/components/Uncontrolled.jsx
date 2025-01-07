@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-function UncontrolledForm() {
+function UncontrolledForm({NAME}) {
   const inputRef = useRef();
 
   const handleSubmit = (e) => {
