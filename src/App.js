@@ -2,7 +2,7 @@ import React from 'react';
 import ControlledForm from './components/Controlled.jsx';  //  .jsx
 import UncontrolledForm from './components/Uncontrolled.jsx';  //  .jsx
 import FetchData from './components/FetchData.js';  // .js
-import useEffect from './components/useEffect.jsx'; // .jsx
+import FetchDataComponent from './components/FetchData.jsx'; // .jsx
 
 function App() {
   return (
@@ -12,8 +12,9 @@ function App() {
       <ControlledForm />
       <hr />
       <UncontrolledForm NAME={'AWD'} />
-      <hr />
-      <FetchData />
+    
+      <hr/>
+      <FetchDataComponent/>
     </div>
   );
 }
